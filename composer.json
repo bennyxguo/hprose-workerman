@@ -1,0 +1,22 @@
+{
+    "name": "tridiamond/hprose-workerman",
+    "description": "Combine Hprose with Workerman",
+    "type": "library",
+    "require": {
+        "hprose/hprose": "^2.0",
+        "workerman/workerman": "^3.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TriDiamond",
+            "email": "code.tridiamond@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "Service.php",
+            "HproseWorkermanService.php"
+        ]
+    }
+}
