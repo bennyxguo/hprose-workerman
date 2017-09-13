@@ -1,6 +1,6 @@
 {
     "name": "tridiamond/hprose-workerman",
-    "description": "Combine Hprose with Workerman",
+    "description": "Combines Hprose with Workerman, compatitble with latest hprose 2.x",
     "type": "library",
     "require": {
         "hprose/hprose": "^2.0",
@@ -14,9 +14,8 @@
         }
     ],
     "autoload": {
-        "classmap": [
-            "Service.php",
-            "HproseWorkermanService.php"
-        ]
+        "psr-4": {
+            "tridiamond\\hprose-workerman\\": "src"
+        }
     }
 }
