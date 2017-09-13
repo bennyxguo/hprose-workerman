@@ -1,4 +1,4 @@
-# Hprose and Workerman - work together!
+# Hprose and Workerman - MERGED!
 
 Workerman is a framework for building multi-process servers in PHP. It allows you to build a Webserver or another kind of server - maybe for an API. Hprose is both, a protocol and RPC engine. It is modern, lightweight and amazingly fast. It's own serialization format supports objects, binary data and even more!
 
@@ -31,7 +31,10 @@ Hprose supports many programming languages, for example:
 Through Hprose, You can conveniently and efficiently intercommunicate between those programming languages.
 
 ## Usage
-In order to use Hprose with a Workerman setup, you will need to have Composer. With it, the required dependencies are installed.
+Install with composer
+```
+composer require tridiamond/hprose-workerman
+```
 
 ### Example: Create a Hprose-based workerman setup
 ```php
@@ -63,13 +66,11 @@ $hprose->addFunction("hello");
 You now have a Workerman instance with 4 workers listening on your local port `9999`. This server balances requests upon processes and lets you scale your application.
 
 #### Note
-`hprose-php` and `hprose-pecl` **do not** currently have methods to interact with a TCP server. You will need to use NodeJS or another supported language to talk to this server instance.
-
-For further information, please consult the `hprose-php` and/or `hprose-pecl` repositories.
+This little module was originally coded by [Kevin Ingwersen (Ingwie Phoenix)](https://github.com/IngwiePhoenix), I have completely rebuilded it to make it more efficient and best of all **SUPPORTS latest Hprose and Workerman versions**.
 
 ## License
 This code is released by the standard MIT license.
 
 ## Author
-This little module was coded by [Kevin Ingwersen (Ingwie Phoenix)](https://github.com/IngwiePhoenix)
+This little module was coded/modified by [TriDiamond (Ingwie Phoenix)](https://github.com/TriDiamond)
 Hprose was originally developed by [Ma Bingyao](https://github.com/andot)
