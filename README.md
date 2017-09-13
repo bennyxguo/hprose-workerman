@@ -72,5 +72,5 @@ This little module was originally coded by [Kevin Ingwersen (Ingwie Phoenix)](ht
 This code is released by the standard MIT license.
 
 ## Author
-This little module was coded/modified by [TriDiamond (Ingwie Phoenix)](https://github.com/TriDiamond)
+This little module was coded/modified by [TriDiamond](https://github.com/TriDiamond)
 Hprose was originally developed by [Ma Bingyao](https://github.com/andot)
