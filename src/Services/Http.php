@@ -129,7 +129,7 @@ class Http extends HproseHttpService{
         unset($this->origins[strtolower($origin)]);
     }
 //
-    public function handle(&$conn, $request = null, $response = null) {
+    public function httpHandle(&$conn, $request = null, $response = null) {
         $request_data = $GLOBALS['HTTP_RAW_REQUEST_DATA'];
         $workerHttp = new WorkermanHttp();
         $context = $this->createContext($request, $response);
