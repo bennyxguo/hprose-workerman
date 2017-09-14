@@ -1,9 +1,20 @@
 <?php
+
+/** ---------------------------------------------------------
+|
+| Workerman Server with Hprose integration
+| Workerman 服务端 - 集成了Hprose
+|
+| ---------------------------------------------------------
+| Developer: TriDiamond <code.tridiamond@gmail.com>
+| LastModified: 2017/09/14
+ * ---------------------------------------------------------
+ */
+
 namespace Hprose\Workerman;
 
 use Workerman\Worker;
 use Exception;
-use \Bridge\HproseWorkermanService;
 
 class Server extends Worker {
     // Initialize

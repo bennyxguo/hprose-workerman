@@ -15,7 +15,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "tridiamond\\hprose-workerman\\": "src"
+            "Hprose\\Workerman\\": "src",
+            "Hprose\\Workerman\\Service\\": "src/Services"
         }
     }
 }
