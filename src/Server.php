@@ -63,7 +63,7 @@ class Server extends Worker {
 
     // The handler
     public function onMessage($conn, $data) {
-        $this->_hprose->handle($conn, $data);
+        $this->_hprose->httpHandle($conn, $data);
     }
 
 }
