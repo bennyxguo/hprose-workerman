@@ -1,18 +1,25 @@
 <?php
-namespace Hprose\Workerman\Services;
 
-if(!class_exists("\Hprose\Workman\Base\Service")) {
-    require_once __DIR__."/../Service.php";
-}
+/** ---------------------------------------------------------
+|
+| Workerman Http Service with Hprose integration
+| Workerman HTTP服务 - 集成了Hprose
+|
+| ---------------------------------------------------------
+| Developer: TriDiamond <code.tridiamond@gmail.com>
+| LastModified: 2017/09/14
+ * ---------------------------------------------------------
+ */
+
+namespace Hprose\Workerman\Services;
 
 use Workerman\Worker;
 use Hprose\Future;
 use Workerman\Protocols\Http as WorkermanHttp;
 use Hprose\Http\Service as HproseHttpService;
-use Hprose\Workerman\Base\Service as WorkerHproseService;
 use stdClass;
 
-class Http extends WorkerHproseService{
+class Http extends HproseHttpService{
 
     const ORIGIN = 'HTTP_ORIGIN';
     public $onSendHeader = null;
