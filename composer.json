@@ -15,8 +15,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Hprose\\Workerman": "src",
-            "Hprose\\Workerman\\Service": "src/Services"
+            "Hprose\\Workerman\\": "src",
+            "Hprose\\Workerman\\Service\\": "src/Services"
         }
     }
 }
